@@ -748,7 +748,7 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_21_0.png)
+![jpeg](output_21_0.jpeg)
 
 
 
@@ -759,7 +759,7 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_22_0.png)
+![jpeg](output_22_0.jpeg)
 
 
 
@@ -769,7 +769,7 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_23_0.png)
+![jpeg](output_23_0.jpeg)
 
 
 
@@ -779,7 +779,7 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_24_0.png)
+![jpeg](output_24_0.jpeg)
 
 
 
@@ -811,7 +811,7 @@ matplotlib.pyplot.show()
 ```
 
 
-![png](output_25_0.png)
+![jpeg](output_25_0.jpeg)
 
 
 # Storing Values in Lists
@@ -1134,21 +1134,21 @@ for filename in filenames:
 
 
 
-![png](output_2_1.png)
+![jpeg](output_2_1.jpeg)
 
 
     inflammation-02.csv
 
 
 
-![png](output_2_3.png)
+![jpeg](output_2_3.jpeg)
 
 
     inflammation-03.csv
 
 
 
-![png](output_2_5.png)
+![jpeg](output_2_5.jpeg)
 
 
 # Making Choices
@@ -1514,7 +1514,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_1.png)
+![jpeg](output_18_1.jpeg)
 
 
     Suspicious looking maxima!
@@ -1522,7 +1522,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_3.png)
+![jpeg](output_18_3.jpeg)
 
 
     Suspicious looking maxima!
@@ -1530,7 +1530,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_5.png)
+![jpeg](output_18_5.jpeg)
 
 
     Minima add up to zero!
@@ -1538,7 +1538,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_7.png)
+![jpeg](output_18_7.jpeg)
 
 
     Suspicious looking maxima!
@@ -1546,7 +1546,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_9.png)
+![jpeg](output_18_9.jpeg)
 
 
     Suspicious looking maxima!
@@ -1554,7 +1554,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_11.png)
+![jpeg](output_18_11.jpeg)
 
 
     Suspicious looking maxima!
@@ -1562,7 +1562,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_13.png)
+![jpeg](output_18_13.jpeg)
 
 
     Suspicious looking maxima!
@@ -1570,7 +1570,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_15.png)
+![jpeg](output_18_15.jpeg)
 
 
     Minima add up to zero!
@@ -1578,7 +1578,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_17.png)
+![jpeg](output_18_17.jpeg)
 
 
     Suspicious looking maxima!
@@ -1586,7 +1586,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_19.png)
+![jpeg](output_18_19.jpeg)
 
 
     Suspicious looking maxima!
@@ -1594,7 +1594,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_21.png)
+![jpeg](output_18_21.jpeg)
 
 
     Minima add up to zero!
@@ -1602,7 +1602,7 @@ for filename in filenames[:]:
 
 
 
-![png](output_18_23.png)
+![jpeg](output_18_23.jpeg)
 
 
     Suspicious looking maxima!
@@ -2501,210 +2501,6 @@ test_range_overlap()
 
 
     AssertionError: 
-
-
-
-# Command Line Programs
-
-(base) student@landingvm:~$ ls
-anaconda3  Documents  examples.desktop  jupyter.log  Pictures  R                                       singularity  Templates          Videos
-Desktop    Downloads  go                Music        Public    rstudio-server-2022.07.1-554-amd64.deb  snap         thinclient_drives
-(base) student@landingvm:~$ cd Desktop/classroom/myfiles/
-(base) student@landingvm:~/Desktop/classroom/myfiles$ ls
-bioinformatics  data-shellcd     notebook5.ipynb  notebooks                                  Sars_cov_2.ASM985889v3.pep.all.fa.gz  swc-python
-data-shell      notebook4.ipynb  notebook8.ipynb  Sars_cov_2.ASM985889v3.dna.toplevel.fa.gz  shell-lesson-data.zip
-(base) student@landingvm:~/Desktop/classroom/myfiles$ ls
-bioinformatics  notebook4.ipynb  notebooks                                  shell-lesson-data.zip
-data-shell      notebook5.ipynb  Sars_cov_2.ASM985889v3.dna.toplevel.fa.gz  swc-python
-data-shellcd    notebook8.ipynb  Sars_cov_2.ASM985889v3.pep.all.fa.gz       sys_version.py
-(base) student@landingvm:~/Desktop/classroom/myfiles$ python sys_version.py
-version is 3.7.4 (default, Aug 13 2019, 20:35:49) 
-[GCC 7.3.0]
-(base) student@landingvm:~/Desktop/classroom/myfiles$ python argv_list.py
-sys.argv is ['argv_list.py']
-(base) student@landingvm:~/Desktop/classroom/myfiles$ python argv_list.py first second third
-sys.argv is ['argv_list.py', 'first', 'second', 'third']
-(base) student@landingvm:~/Desktop/classroom/myfiles$ cat ../code/readings_01.py
-cat: ../code/readings_01.py: No such file or directory
-(base) student@landingvm:~/Desktop/classroom/myfiles$ cd swc-python/data/
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/readings_01.py
-import sys
-import numpy
-
-
-def main():
-    script = sys.argv[0]
-    filename = sys.argv[1]
-    data = numpy.loadtxt(filename, delimiter=',')
-    for row_mean in numpy.mean(data, axis=1):
-        print(row_mean)
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ python ../code/readings_01.py inflammation-01.csv
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/readings_02.py
-import sys
-import numpy
-
-def main():
-    script = sys.argv[0]
-    filename = sys.argv[1]
-    data = numpy.loadtxt(filename, delimiter=',')
-    for row_mean in numpy.mean(data, axis=1):
-        print(row_mean)
-
-
-if __name__ == '__main__':
-    main()
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ python ../code/readings_02.py inflammation-01.csv
-5.45
-5.425
-6.1
-5.9
-5.55
-6.225
-5.975
-6.65
-6.625
-6.525
-6.775
-5.8
-6.225
-5.75
-5.225
-6.3
-6.55
-5.7
-5.85
-6.55
-5.775
-5.825
-6.175
-6.1
-5.8
-6.425
-6.05
-6.025
-6.175
-6.55
-6.175
-6.35
-6.725
-6.125
-7.075
-5.725
-5.925
-6.15
-6.075
-5.75
-5.975
-5.725
-6.3
-5.9
-6.75
-5.925
-7.225
-6.15
-5.95
-6.275
-5.7
-6.1
-6.825
-5.975
-6.725
-5.7
-6.25
-6.4
-7.05
-5.9
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ ls small-*.csv
-small-01.csv  small-02.csv  small-03.csv
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat small-01.csv
-0,0,1
-0,1,2
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ python ../code/readings_02.py small-01.csv
-0.3333333333333333
-1.0
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/readings_03.py
-import sys
-import numpy
-
-
-def main():
-    script = sys.argv[0]
-    for filename in sys.argv[1:]:
-        data = numpy.loadtxt(filename, delimiter=',')
-        for row_mean in numpy.mean(data, axis=1):
-            print(row_mean)
-
-
-if __name__ == '__main__':
-    main()
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ python ../code/readings_03.py small-01.csv small-02.csv
-0.3333333333333333
-1.0
-13.666666666666666
-11.0
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/readings_04.py
-import sys
-import numpy
-
-
-def main():
-    script = sys.argv[0]
-    action = sys.argv[1]
-    filenames = sys.argv[2:]
-
-    for filename in filenames:
-        data = numpy.loadtxt(filename, delimiter=',')
-
-        if action == '--min':
-            values = numpy.min(data, axis=1)
-        elif action == '--mean':
-            values = numpy.mean(data, axis=1)
-        elif action == '--max':
-            values = numpy.max(data, axis=1)
-
-        for val in values:
-            print(val)
-
-
-if __name__ == '__main__':
-    main()
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ python ../code/readings_04.py --max small-01.csv
-1.0
-2.0
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/readings_05.py
-import sys
-import numpy
-
-def main():
-    script = sys.argv[0]
-    action = sys.argv[1]
-    filenames = sys.argv[2:]
-    assert action in ['--min', '--mean', '--max'], \
-           'Action is not one of --min, --mean, or --max: ' + action
-    for filename in filenames:
-        process(filename, action)
-
-def process(filename, action):
-    data = numpy.loadtxt(filename, delimiter=',')
-
-    if action == '--min':
-        values = numpy.min(data, axis=1)
-    elif action == '--mean':
-        values = numpy.mean(data, axis=1)
-    elif action == '--max':
-        values = numpy.max(data, axis=1)
-
-    for val in values:
-        print(val)
-
-if __name__ == '__main__':
-   main()
-(base) student@landingvm:~/Desktop/classroom/myfiles/swc-python/data$ cat ../code/count_stdin.py
-import sys
-
-count = 0
-for line in sys.stdin:
-    count += 1
 
 # Transcribing DNA into RNA
 
