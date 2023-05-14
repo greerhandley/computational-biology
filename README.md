@@ -371,7 +371,7 @@ plot(x, y1, ax, 'Increase in mean Fortune 500 company profits from 1955 to 2005'
 ```
 
 
-![png](output_15_0.png)
+![jpeg](output_15_0.jpeg)
 
 
 
@@ -382,7 +382,7 @@ plot(x, y2, ax, 'Increase in mean Fortune 500 company revenues from 1955 to 2005
 ```
 
 
-![png](output_16_0.png)
+![jpeg](output_16_0.jpeg)
 
 
 
@@ -401,7 +401,7 @@ fig.tight_layout()
 ```
 
 
-![png](output_17_0.png)
+![jpeg](output_17_0.jpeg)
 
 
 # Python Fundamentals
